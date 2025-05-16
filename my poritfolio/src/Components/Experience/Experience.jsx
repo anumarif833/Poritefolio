@@ -39,12 +39,14 @@ const Experience = () => {
             </div>
 
             {/* Content Section */}
-            <div
-              className={`w-full sm:max-w-md mt-16 sm:mt-0 p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md 
-              shadow-[0_0_20px_1px_rgba(130,130,130,0.5)] 
+            
+              <div
+              className={`w-full sm:max-w-md mt-16 sm:mt-0 p-4 sm:p-8 rounded-2xl 
+              border border-white bg-gray-900 backdrop-blur-md 
               ${index % 2 === 0 ? 'sm:ml-12' : 'sm:mr-12'} 
-              transform transition-transform duration-300 hover:scale-105`}
-            >
+              transform transition-transform duration-300 hover:scale-105
+              shadow-[0_0_20px_1px_rgba(130,130,130,0.5)]`}
+>
               <h3 className='text-xl font-bold text-white'>{experience.role}</h3>
               <p className='text-purple-400 font-semibold text-sm'>{experience.company}</p>
               <p className='text-gray-300 mt-2 text-sm'>{experience.date}</p>
